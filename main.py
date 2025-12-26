@@ -21,7 +21,7 @@ speech_queue = queue.Queue()
 # Load Model (Ensure these files are in the same folder)
 try:
     model = load_model('facialemotionmodel.h5')
-    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 except Exception as e:
     print(f"Error loading model/cascade: {e}")
 
